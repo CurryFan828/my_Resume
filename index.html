@@ -58,11 +58,12 @@ The above copyright notice and this permission notice shall be included in all c
 
 <body class="index-page sidebar-collapse">
   <a id="top"></a>
+
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="300">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/paper-kit/index.html" rel="tooltip" title="Coded by Creative Tim" data-placement="bottom" target="_blank">
+        <a class="navbar-brand" href="#" id="scrollToTopLink" rel="tooltip" title="Coded by Creative Tim" data-placement="bottom" target="_blank">
           Isaac Stanek
         </a>
         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -97,6 +98,7 @@ The above copyright notice and this permission notice shall be included in all c
     </div>
   </nav>
   <!-- End Navbar -->
+
   <div class="page-header section-dark" style="background-image: url('./assets/img/dark-macbook.jpg')">
     <div class="filter"></div>
     <div class="content-center">
@@ -112,43 +114,102 @@ The above copyright notice and this permission notice shall be included in all c
   <div class="main">
 
     <div class="container tim-container">
-        <div>
-          <h1 class="centered-header">
-            <span class="title"></span> About Me
-          </h1>
-          <div class="summary">
-            <h3>
-              <p>
-                I am a junior majoring in Computer Science with hands-on experience in web development and programming.
-                I have a strong foundation in HTML, CSS, and Python, which I’ve applied in various projects, including building my own website.
-                Currently, I am learning JavaScript to become proficient with Angular.
-                My passion for coding and problem-solving drives me to continuously learn and enhance my skills in software development.
-              </p>
-            </h3>
-          </div>
-        </div>
-    </div>
-      <br>
-    
-      <!-- Portfolio Section -->
-      <div id="portfolio" class="portfolio-section">
+      <div>
         <h1 class="centered-header">
-          <span class="title"></span> Portfolio
+          <span class="title"></span> About Me
         </h1>
-        <div class="row container tim-container">
-          <div class="col-md-12">
-            <div class="portfolio-item">
-              <a href="https://promotingnla.com/"><img src="./assets/img/PNLA Logo.png" alt="Project 1" class="img-fluid m-3"></a>
-              
-              <a href="https://promotingnla.com/"> <h3>PromotingNLA</h3></a>
-              <p>PNLA is a WordPress website I developed to support high school athletes in their pursuit of college sports opportunities. The platform facilitates the process of connecting athletes with college coaches by sending targeted emails, enhancing their visibility and increasing their chances of being recruited to play at the collegiate level.</p>
-            </div>
-          </div>
+        <div class="summary">
+          <h3>
+            <p>
+              I am a senior majoring in Computer Science and graduating in May 2026, with plans to continue my education by pursuing a master's degree. 
+              Over the past few years, I have gained hands-on experience building full-stack applications and working with modern web technologies. 
+              I have developed projects using React and Angular, connected applications to databases, and worked with tools such as GitHub, Postman, and FileZilla to manage development and deployment workflows. <br><br>
+
+              Through both coursework and internship experience at Catclaws, I have strengthened my problem-solving skills and gained practical experience working with web systems, databases, and software tools used in real development environments. 
+              I enjoy building applications, learning new technologies, and continuously improving my skills as a developer.
+            </p> <br>
+          </h3>
         </div>
       </div>
-      <p>&nbsp;</p>
-      <!-- End Portfolio Section -->
+
+      <!-- Experience Tab -->
+      <div class="container py-5">
+        <h1 class="centered-header mb-4">Experience</h1>
+
+          <div class="card shadow-lg p-4">
+            <h4>Catclaws</h4>
+            <p><strong>Web & Technology Assistant</strong></p>
+            <p>Assisted with maintaining and improving web-based systems while gaining experience with development tools and technologies used in modern workflows.</p>
+
+            <ul style="text-align:left;">
+              <li>Worked with GitHub for version control and project collaboration.</li>
+              <li>Used Postman to test and interact with APIs.</li>
+              <li>Managed and deployed files using FTP tools such as FileZilla.</li>
+              <li>Assisted with web updates and technical troubleshooting.</li>
+              <li>Gained experience working with databases and backend systems.</li>
+            </ul>
+          </div>
+        </div>  
     </div>
+    <br>
+    
+    <!-- Portfolio Section -->
+    <div id="portfolio" class="portfolio-section">
+      <div class="container py-5"> <!-- Outer container with vertical padding -->
+        <h1 class="centered-header mb-4">Portfolio</h1>
+        <div class="row g-4"> <!-- Row with gutters for even spacing -->
+
+          <!-- Project 1 SUNNYSIDE BREAKFAST -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card portfolio-item shadow-lg">
+              <a href="http://sunnysidebreakfast.isaacstanek.com/" target="_blank">
+                <img src="./assets/img/sunnyside.png" class="card-img-top img-fluid" 
+                    style="max-height:200px; object-fit:contain;" 
+                    alt="Sunny Side Breakfast">
+              </a>
+              <div class="card-body text-center">
+                <a href="https://promotingnla.com/" target="_blank"><h5 class="card-title text-dark fw-bold">Food App</h5></a>
+                <p class="card-text">SunnySide Breakfast is a web application built with Angular that displays breakfast menu items stored in a MySQL database. The app dynamically loads food data and presents it in a clean, responsive interface using Angular components. This project demonstrates my ability to connect a front-end framework to a database and manage dynamic data in a web application.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 WEATHER APP -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card portfolio-item shadow-lg">
+              <a href="http://weatherapp.isaacstanek.com/" target="_blank">
+                <img src="./assets/img/weatherapp.png" class="card-img-top img-fluid" 
+                    style="max-height:200px; object-fit:contain;" 
+                    alt="Weather App">
+              </a>
+              <div class="card-body text-center">
+                <a href="http://weatherapp.isaacstanek.com/" target="_blank"><h5 class="card-title">Weather App</h5></a>
+                <p class="card-text">This weather application was built using React and retrieves real-time weather data from an external API. The app dynamically displays temperature, conditions, and location-based weather information through React components. This project demonstrates my experience working with APIs, state management, and building responsive user interfaces in React.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 MUSIC APP -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card portfolio-item shadow-lg">
+              <a href="http://musicapp.isaacstanek.com/" target="_blank">
+                <img src="./assets/img/musicapp.png" class="card-img-top img-fluid" 
+                    style="max-height:200px; object-fit:contain;" 
+                    alt="Music Player">
+              </a>
+              <div class="card-body text-center">
+                <a href="http://musicapp.isaacstanek.com/" target="_blank"><h5 class="card-title">Music App</h5></a>
+                <p class="card-text">This Music Player is a React-based web application that allows users to play and control audio tracks through a simple interface. The app uses React components to manage playback features such as play, pause, and track selection. This project highlights my ability to build interactive user interfaces and manage application state using React.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more projects by copying a col-md-6 col-lg-4 block -->
+
+        </div> <!-- End row -->
+      </div> <!-- End container -->
+    </div> <!-- End portfolio-section -->
+  </div>
 
 <!-- 
   <div class="container tim-container">
@@ -192,7 +253,8 @@ The above copyright notice and this permission notice shall be included in all c
     </div>
   </div> -->
 
-  <!-- Original navigation hidden on small screens -->
+
+<!-- Original navigation hidden on small screens -->
 <div class="container tim-container d-none d-md-block">
   <div class="nav-tabs-navigation">
     <div class="nav-tabs-wrapper">
@@ -201,35 +263,49 @@ The above copyright notice and this permission notice shall be included in all c
           <a class="nav-link active" data-toggle="tab" href="#skills" role="tab"><h6>My Skills</h6></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#taken" role="tab"><h6>Classes Taken</h6></a>
+          <a class="nav-link" data-toggle="tab" href="#taken" role="tab"><h6>Certifications</h6></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#upcoming" role="tab"><h6>Upcoming Classes</h6></a>
+          <a class="nav-link" data-toggle="tab" href="#upcoming" role="tab"><h6>Upcoming Projects</h6></a>
         </li>
       </ul>
     </div>
   </div>
+
   <div id="my-tab-content" class="tab-content text-center">
+    <!-- Skills tab -->
     <div class="tab-pane active" id="skills" role="tabpanel">
-        <p>Web Development</p>
-        <p>Programming in C++</p>
-        <p>Programming in Python</p>
-        <p>Proficiency in HTML and CSS</p>
-        <p>JavaScript (Learning)</p>
-        <p>Familiarity with Angular (Learning)</p>
-        <p>Problem-Solving</p>
+      <p>Full Stack Web Development</p>
+      <p>React Application Development</p>
+      <p>Angular Application Development</p>
+      <p>JavaScript, HTML, and CSS</p>
+      <p>Python Programming</p>
+      <p>C++ Programming</p>
+      <p>SQL and Database Development</p>
+      <p>REST API Integration</p>
+      <p>GitHub Version Control</p>
+      <p>Postman API Testing</p>
+      <p>FTP Deployment with FileZilla</p>
+      <p>Responsive Web Design</p>
+      <p>Problem Solving and Debugging</p>
     </div>
+
+    <!-- Certifications tab -->
     <div class="tab-pane" id="taken" role="tabpanel"> 
-        <p> Web Development</p>
-        <p>Programming for Everyone 1(Python)</p>
-        <p>Intro to Networking</p>
-        <p>Computer Hardware & Architecture</p>
-        <p>Internet History/Security & Technology</p>
+      <p>Web Development Fundamentals</p>
+      <p>Programming for Everyone I (Python)</p>
+      <p>Introduction to Networking</p>
+      <p>Computer Hardware and Architecture</p>
+      <p>Internet Technology, Security, and History</p>
+      <p>Data Structures and Algorithms</p>
     </div>
+
+    <!-- Upcoming projects tab -->
     <div class="tab-pane" id="upcoming" role="tabpanel">
-        <p>Programing for Everyone 2(Python)</p>
-        <p>Application Development 1</p>
-        <p>Application Development 2</p>
+      <p>Full Stack Food Ordering Application (Angular + Database)</p>
+      <p>Enhanced React Weather Application with Forecast Features</p>
+      <p>Personal Developer Portfolio Improvements</p>
+      <p>API-Based Web Applications</p>
     </div>
   </div>
 </div>
