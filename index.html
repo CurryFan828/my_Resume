@@ -43,7 +43,8 @@ The above copyright notice and this permission notice shall be included in all c
     }
 
     .summary,
-    .portfolio-section {
+    .portfolio-section,
+    .business-section {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -52,6 +53,21 @@ The above copyright notice and this permission notice shall be included in all c
 
   .portfolio-item img {
       margin: 0 auto;
+    }
+
+    .business-item img {
+      margin: 0 auto;
+    }
+
+    .business-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      z-index: 2;
+    }
+
+    .business-item {
+      position: relative;
     }
   </style>
 </head>
@@ -168,7 +184,7 @@ The above copyright notice and this permission notice shall be included in all c
                     alt="Sunny Side Breakfast">
               </a>
               <div class="card-body text-center">
-                <a href="https://promotingnla.com/" target="_blank"><h5 class="card-title text-dark fw-bold">Food App</h5></a>
+                <a href="http://sunnysidebreakfast.isaacstanek.com/" target="_blank"><h5 class="card-title text-dark fw-bold">Food App</h5></a>
                 <p class="card-text">SunnySide Breakfast is a web application built with Angular that displays breakfast menu items stored in a MySQL database. The app dynamically loads food data and presents it in a clean, responsive interface using Angular components. This project demonstrates my ability to connect a front-end framework to a database and manage dynamic data in a web application.</p>
               </div>
             </div>
@@ -209,6 +225,53 @@ The above copyright notice and this permission notice shall be included in all c
         </div> <!-- End row -->
       </div> <!-- End container -->
     </div> <!-- End portfolio-section -->
+    <br>
+
+    <!-- Business Section -->
+    <div id="business" class="business-section">
+      <div class="container py-5">
+        <h1 class="centered-header mb-4">Business Websites</h1>
+        <p class="mb-4 mx-auto text-center" style="max-width: 700px;">Websites I've designed and built for local businesses.</p>
+        <div class="row g-4 justify-content-center">
+
+          <!-- Business 1: Watsons Construction -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card business-item shadow-lg">
+              <span class="badge badge-pill badge-info business-badge">Business Site</span>
+              <a href="https://watsonsconstructionandjunkremoval.com/" target="_blank">
+                <img src="./assets/img/watsons-construction.png" class="card-img-top img-fluid"
+                    style="max-height:200px; object-fit:contain;"
+                    alt="Watsons Construction & Junk Removal">
+              </a>
+              <div class="card-body text-center">
+                <a href="https://watsonsconstructionandjunkremoval.com/" target="_blank"><h5 class="card-title text-dark fw-bold">Watsons Construction & Junk Removal</h5></a>
+                <p class="card-text">A business website built for Watsons Construction & Junk Removal, showcasing their services, before-and-after project photos, and contact information to help attract local customers.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more business sites by copying a col-md-6 col-lg-4 block, like the example below:
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card business-item shadow-lg">
+              <span class="badge badge-pill badge-info business-badge">Business Site</span>
+              <a href="https://example-business.com/" target="_blank">
+                <img src="./assets/img/example-business.png" class="card-img-top img-fluid"
+                    style="max-height:200px; object-fit:contain;"
+                    alt="Example Business">
+              </a>
+              <div class="card-body text-center">
+                <a href="https://example-business.com/" target="_blank"><h5 class="card-title text-dark fw-bold">Example Business</h5></a>
+                <p class="card-text">Short description of the business and what the site does for them.</p>
+              </div>
+            </div>
+          </div>
+
+          -->
+
+        </div> <!-- End row -->
+      </div> <!-- End container -->
+    </div> <!-- End business-section -->
   </div>
 
 <!-- 
